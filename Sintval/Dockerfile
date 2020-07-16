@@ -1,4 +1,4 @@
-FROM alpine
+FROM python:3.7-alpine3.9
 # Based on https://github.com/jazzdd86/alpine-flask
 
 # Install base components
