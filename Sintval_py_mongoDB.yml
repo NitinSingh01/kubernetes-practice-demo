@@ -34,11 +34,16 @@ spec:
     appdb: mongodb
 
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: app1
+  labels:  
+    app: app1
 spec:
+  selector:  
+    matchLabels:  
+      app: app1
   replicas: 3
   template:
     metadata:
